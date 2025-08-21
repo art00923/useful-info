@@ -420,3 +420,35 @@ link.addEventListener('click', function(event) {
   console.log('Цель события (event.target):', event.target.tagName); // A
 });
 ```
+
+---
+
+## Сводная таблица основных методов
+
+| Метод/Свойство | Краткое описание |
+| :--- | :--- |
+| **Поиск** | |
+| `getElementById('id')` | Найти элемент по уникальному `id`. |
+| `querySelector('selector')` | Найти первый элемент по CSS-селектору. |
+| `querySelectorAll('selector')` | Найти все элементы по CSS-селектору. |
+| **Навигация** | |
+| `element.children` | Получить коллекцию дочерних элементов. |
+| `element.parentElement` | Получить родительский элемент. |
+| `element.nextElementSibling` | Получить следующий соседний элемент. |
+| **Манипуляция** | |
+| `createElement('tag')` | Создать новый элемент (в памяти). |
+| `element.append(item)` | Вставить узел или строку в конец элемента. |
+| `element.remove()` | Удалить элемент со страницы. |
+| `element.cloneNode(true)`| Создать "глубокую" копию элемента. |
+| **Содержимое и Атрибуты** | |
+| `element.textContent` | Изменить/прочитать текстовое содержимое (безопасно). |
+| `element.innerHTML` | Изменить/прочитать HTML-содержимое (опасно с данными от пользователя). |
+| `element.setAttribute('attr', 'val')` | Установить или изменить значение атрибута. |
+| `element.classList.add('class')` | Добавить CSS-класс элементу. |
+| **Стили** | |
+| `element.style.property` | Изменить инлайн-стиль (в атрибуте `style`). |
+| `getComputedStyle(element)` | Прочитать итоговый CSS-стиль элемента (только чтение). |
+| **События** | |
+| `addEventListener('event', handler)` | Назначить обработчик события. |
+| `removeEventListener('event', handler)` | Снять ранее назначенный обработчик. |
+| `event.preventDefault()` | Отменить стандартное действие браузера. |
